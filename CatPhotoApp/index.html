@@ -1,0 +1,155 @@
+<!-- 所有页面都应以 <!DOCTYPE html> 开头.这个特殊的字符串被称为声明,并确保浏览器尝试满足行业范围的规范 -->
+<!doctype html>
+<html lang="en">
+  <!-- 将值为 en 的 lang 属性添加到开始 html 标签以指定页面的语言为英语 -->
+  <!-- 注释让你在不影响浏览器显示内容的情况下留下信息,它也能让你的代码失效. 本段文字就是一段注释 -->
+  <!-- 嵌套的(子)元素的位置应该放在被他们嵌套的(父)元素中新的一行并且右侧保留两个空格的缩进,它使 HTML 更易读 -->
+  <!-- 页面头部元素 -->
+  <head>
+    <!-- 你可以通过在 head 中添加自闭合的 meta 元素，来设置浏览器行为 -->
+    <meta charset="UTF-8" />
+    <!-- title 元素决定了浏览器在页面的标题栏或选项卡中显示的内容  -->
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <!-- HTML5 有些元素能够指明不同的内容区域.这些元素能让你的 HTML 易于阅读,并有助于搜索引擎优化(SEO)和无障碍访问 
+      通过在 h1 元素之前添加 <main> 开始标签和在 p 元素之后添加 </main> 结束标签来标识此页面的主要部分. -->
+    <main>
+      <!-- HTML 元素中拥有开始标签,如<h1>,和结束标签,如</h1>元素的文本在元素的开始标签和结束标签之间. -->
+      <h1>CatPhotoApp</h1>
+      <!-- 在添加任何新内容之前,你应该使用 section 元素将猫咪照片内容与未来的内容分开 -->
+      <!-- 将你的 h2 元素/注释/p 元素和锚点（a）元素嵌套在一个 section 元素中 -->
+      <section>
+        <!-- h1 到 h6 标题元素用于表明其下方内容的重要性,数字越低,重要性越高
+            每页只使用一个 h1 元素,并将重要性较低的标题放在重要性较高的标题之下 -->
+        <h2>Cat Photo</h2>
+        <!-- p 元素用于在网站上创建一段文本. -->
+        <!-- 你可以使用锚点元素(a)链接到另一个页面链接的文本必须放置在锚点元素(a)的起始和闭合标签之间 -->
+        <!-- 向锚点元素(a)的起始标签中添加值为 _blank 的 target 属性,用以在新的标签页中打开链接 -->
+        <p>
+          See more
+          <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+          in our gallery.
+        </p>
+
+        <!-- img 元素来为你的网站添加图片,img 元素只有一个开始标签,没有结束标签.
+            一个没有结束标签的元素,它的标签被称为自闭合标签 -->
+        <!-- HTML 属性是写在一个元素的开始标签中的特殊词汇,它们用于控制这个元素的行为. 
+            在 img 元素中的 src 属性明确了一个图片的 URL（图片所在的位置） -->
+        <!-- 所有的 img 元素都应该有一个 alt 属性, alt 属性的文本(值)有两个作用,
+            第一个作用是让屏幕阅读器可以知晓图片的内容,这会对网页的可访问性有很大提升;
+            另一个作用是当图片无法加载时,页面需要显示的替代文本 -->
+        <a href="https://freecatphotoapp.com">
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back"
+          />
+        </a>
+      </section>
+      <
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <!-- 使用(ul)元素创建无序列表,列表项(li)元素在列表中创建项目 -->
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <!-- figure 元素代表独立的内容,并允许你将图像与标题相关联 -->
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="A slice of lasagna on a plate."
+          />
+          <!-- 图像标题(figcaption)元素用于添加标题以描述 figure 元素中包含的图像 -->
+          <!-- em 元素包裹的字符表示强调 -->
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <!-- 使用(ol)元素创建有序列表,列表项(li)元素在列表中创建项目 -->
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+            alt="Five cats looking around a field."
+          />
+          <!-- strong 元素包裹的字符表示重要 -->
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <!-- form 表单, action 属性指示应该将表单数据发送到哪里 -->
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- input 元素允许你通过多种方式从 Web 表单中收集数据 -->
+          <!-- 你可以使用 type 属性创建多种输入.你可以轻松创建文本/密码字段/重置按钮或控件,让用户从他们的计算机中选择文件 -->
+          <!-- label 元素用于帮助将 input 元素的文本与 input 元素本身关联起来,尤其是对于屏幕阅读器等辅助技术 -->
+          <!-- id 属性用于标识特定的 HTML 元素. 每个 id 属性的值必须不同于整个页面的所有其他 id 值 -->
+          <!-- 请注意,可以同时选择两个单选按钮. 为了使选择一个单选按钮自动取消选择另一个,两个按钮必须有具有相同值的 name 属性 -->
+          <!-- 如果你选择 Indoor 单选按钮并提交表单,则该按钮的表单数据基于其 name 和 value 属性 -->
+          <!-- fieldset 元素用于在 Web 表单中将相关的输入和标签组合在一起. fieldset 元素是块级元素,这意味着它们出现在新的一行上 -->
+          <fieldset>
+            <!-- legend 元素充当 fieldset 元素中内容的标题, 它为用户提供了有关他们应该在表单的该部分中输入什么的上下文 -->
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <!-- 为了使复选框或单选按钮默认被选中,你需要为其添加 checked 属性. 无需为 checked 属性设置值 -->
+            <label
+              ><input name="indoor-outdoor" id="indoor" type="radio" checked />
+              Indoor</label
+            >
+            <label
+              ><input name="indoor-outdoor" id="outdoor" type="radio" />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <!-- 对于可能有多个答案的问题,表单通常使用复选框 checkbox -->
+            <!-- 将文本嵌套在 label 元素中,并添加与 input 元素的 id 具有相同值的 for 属性,此时将 input 元素的文本与元素本身相关联 -->
+            <input
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+              checked
+            />
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic"> Energetic</label>
+          </fieldset>
+          <!-- 你必须给文本字段一个 name 属性,并为其分配一个值来表示数据正在提交 -->
+          <!-- 占位符文本 placeholder 用于提示人们在输入框中输入什么样的信息 -->
+          <!-- 为了防止用户在缺少所需信息时提交你的表单,你需要将 required 属性添加到 input 元素 -->
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            value=""
+            required
+          />
+          <!-- 即使你在文本输入下方添加了按钮,它们也会在页面上彼此相邻.因为 input 和 button 元素都是内联元素 -->
+          <!-- 使用 button 元素创建一个可点击的按钮. -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- 向页面添加页脚部分 -->
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
