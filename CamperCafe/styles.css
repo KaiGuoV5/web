@@ -1,0 +1,114 @@
+/* 类型选择器来设置元素的样式 */
+body {
+  /* 设置背景图片 */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  /* 更改文本的 font-family,使其看起来与浏览器的默认字体不同. 每个浏览器都有一些可用的常用字体 */
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h1,
+h2 {
+  /* 通过添加另一个用逗号分隔的字体名称来为 font-family 添加一个后备值 */
+  font-family: Impact, serif;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  /* 注意沿线边缘的灰色. 这些边缘叫作 borders */
+  border-color: brown;
+  border-width: 1px;
+}
+
+/* class选择器 */
+.established {
+  font-style: italic;
+}
+
+.menu {
+  /* 不占用整页的宽度 */
+  width: 80%;
+  /* 防止它变得太宽 */
+  max-width: 500px;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  /* 用各种 padding 属性给你的菜单在内容和侧面之间留一些空间 */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  padding: 20px;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.dessert,
+.flavor {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+/* 当链接被实际访问时,你可以使用类似 a:visited { propertyName: propertyValue; } 的 pseudo-selector 来更改链接的属性 */
+a:visited {
+  color: black;
+}
+/* 当鼠标悬停在链接上时,你可以使用类似于 a:hover { propertyName: propertyValue; } 的 pseudo-selector 更改链接的属性 */
+a:hover {
+  color: black;
+}
+/* 当链接被实际点击时,你可以使用类似 a:active { propertyName: propertyValue; } 的 pseudo-selector 来更改链接的属性 */
+a:active {
+  color: brown;
+}
