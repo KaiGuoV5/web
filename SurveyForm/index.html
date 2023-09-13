@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KaiGuoV5's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">KaiGuoV5's Survey Form</h1>
+    <p id="description">KaiGuoV5's Learn HTML -- Create a Survey Form Task</p>
+    <form action="https://www.kaiguov5.com/email-submit" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">Email
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">Age(optional)
+                <input type="number" id="number" placeholder="Age" min="10" max="99">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">
+                <select id="dropdown">
+                    <option value="">Select your god</option>
+                    <option value="1">Barbatos</option>
+                    <option value="2">Morax</option>
+                    <option value="3">Beelzebu</option>
+                    <option value="4">Buer[</option>
+                    <option value="5">Furina</option>
+                </select>
+            </label>
+            <label for="protagonist">Which is your favorite protagonist?
+                <input type="radio" value="man" id="protagonist" name="protagonist" class="inline">Kong
+                <input type="radio" value="woman" id="protagonist" name="protagonist" class="inline">Ying
+            </label>
+            <label for="paimeng">Do you like paimeng?
+                <input type="radio" value="yes" id="paimeng" name="paimeng" class="inline">Yes
+                <input type="radio" value="no" id="paimeng" name="paimeng" class="inline">No
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="element">Which element do you like?
+                <input type="checkbox" id="element" name="element" value="wind">Wind
+                <input type="checkbox" id="element" name="element" value="fire">Fire
+                <input type="checkbox" id="element" name="element" value="rock">Rock
+                <input type="checkbox" id="element" name="element" value="thunder">Thunder
+                <input type="checkbox" id="element" name="element" value="grass">Grass
+                <input type="checkbox" id="element" name="element" value="water">Water
+            </label>
+            <label for="comment">Leave your comments here
+                <textarea name="comment" id="" cols="30" rows="3" placeholder="Why do you like genshen?"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" name="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
